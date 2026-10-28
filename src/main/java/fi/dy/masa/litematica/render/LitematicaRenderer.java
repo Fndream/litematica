@@ -128,10 +128,10 @@ public class LitematicaRenderer
         }
 
         // Why Iris?
-        if (IrisCompat.isShaderActive())
-        {
-            this.getWorldRenderer().getFogRenderer().endFrame();        // (This is fixing the Vanilla Fog Renderer, btw)
-        }
+//        if (IrisCompat.isShaderActive())
+//        {
+//            this.getWorldRenderer().getFogRenderer().endFrame();        // (This is fixing the Vanilla Fog Renderer, btw)
+//        }
     }
 
     public void onClose()
@@ -140,11 +140,11 @@ public class LitematicaRenderer
         this.getWorldRenderer().clearLegacyTerrainFixUniform();
         this.getWorldRenderer().closeGpuSampler();
 
-        // Why Iris?
-        if (IrisCompat.isShaderActive())
-        {
-            this.getWorldRenderer().getFogRenderer().close();           // (This is fixing the Vanilla Fog Renderer, btw)
-        }
+//        // Why Iris?
+//        if (IrisCompat.isShaderActive())
+//        {
+//            this.getWorldRenderer().getFogRenderer().close();           // (This is fixing the Vanilla Fog Renderer, btw)
+//        }
     }
 
     public void renderSchematicOverlays(Camera camera, ProfilerFiller profiler)
